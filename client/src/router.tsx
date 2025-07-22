@@ -5,14 +5,19 @@ import StreamPage from "./pages/StreamPage/StreamPage";
 import StreamHome from "./pages/streamhome/StreamHome";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <NotFoundPage />,
-    children: [
-      { index: true, element: <StreamHome /> },
-      { path: "*", element: <StreamPage /> },
-    ],
-  },
+	{
+		path: "/",
+		element: <App />,
+		errorElement: <NotFoundPage />,
+		children: [
+			{ index: true, element: <StreamHome /> },
+			{ path: "streamPage", element: <StreamPage /> },
+		],
+	},
+	{
+		path: "*",
+		element: <NotFoundPage />,
+	},
 ]);
+
 export default router;

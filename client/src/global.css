@@ -1,11 +1,11 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-  margin: 0;
-  background-color: #008080;
+	margin: 0;
+	background-color: #8a9a5b;
 }
 :root {
-  --primary-color: #008080;
-  --secondary-color: #ffffff;
+	--primary-color: #8a9a5b;
+	--secondary-color: #ffffff;
 }
