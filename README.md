@@ -5,9 +5,9 @@ Dans le cadre de ma formation de Développeur Web et Web Mobile (DWWM), j’ai c
 
 Ce projet m’a offert l’opportunité de mettre en pratique la gestion d’état avec React, la communication avec une API REST, ainsi que la manipulation des données côté serveur et client.
 
-Passionné de cinéma, toujours à la recherche du film à regarder, ou essayant de se souvenir de ce titre qu’on a adoré mais qu’on ne retrouve plus. Vous avez une pile de notes, des listes éparpillées, des souvenirs qui s’estompent… C’est frustrant, n’est-ce pas ?
+Passionné de cinéma, toujours à la recherche du film à regarder, ou essayant de se souvenir de ce titre qu’on a adoré mais qu’on ne retrouve plus. une pile de notes, des listes éparpillées, des souvenirs qui s’estompent… C’est frustrant, n’est-ce pas ?
 
-C’est exactement pour ça que **StreamFlix** a été créé : pour rassembler toute votre passion en un seul endroit, facile à gérer et à retrouver.
+C’est exactement pour ça que **StreamFlix** a été créé : pour rassembler toute ma passion en un seul endroit, facile à gérer et à retrouver.
 
 La page **StreamHome** vous accueille comme une porte ouverte vers cet univers personnel, votre bibliothèque unique. Son message simple et motivant vous invite à prendre le contrôle, à ne plus perdre de temps à chercher, mais à commencer à construire votre collection, dès maintenant.
 
