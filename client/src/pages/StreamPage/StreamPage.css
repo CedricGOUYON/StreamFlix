@@ -16,12 +16,14 @@
 	font-size: 1.2rem;
 	text-align: center;
 	color: #8a9a5b;
+	margin: 0px;
 }
 
 .movie-page .view {
 	font-size: 1.2rem;
 	text-align: center;
 	color: #ff5722;
+	margin: 0px;
 }
 
 .btn-back {
@@ -199,4 +201,19 @@
 
 .movie-card button:hover {
 	background-color: #6e7b44;
+}
+
+.sticky-bar {
+	position: sticky;
+	top: 0;
+	background-color: #141414;
+	z-index: 10;
+	padding: 1rem 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+	.hide-on-mobile {
+		display: none;
+	}
 }

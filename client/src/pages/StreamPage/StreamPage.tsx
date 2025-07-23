@@ -115,58 +115,58 @@ export default function MoviePage() {
 			<button type="button" onClick={handleGoBack} className="btn-back">
 				← Accueil
 			</button>
-			<div className="search">
-				<input
-					type="text"
-					placeholder="Rechercher un film..."
-					value={search}
-					onChange={(e) => setSearch(e.target.value)}
-				/>
-			</div>
-			<div className="form">
-				<input
-					type="text"
-					placeholder="Titre"
-					value={title}
-					onChange={(e) => setTitle(e.target.value)}
-				/>
-				<input
-					type="number"
-					placeholder="Année"
-					value={year}
-					onChange={(e) => setYear(e.target.value)}
-				/>
-				<input
-					type="text"
-					placeholder="URL image"
-					value={image}
-					onChange={(e) => setImage(e.target.value)}
-				/>
-				<label>
+			<div className="sticky-bar">
+				<div className="search">
 					<input
-						type="checkbox"
-						className="checkbox-custom"
-						checked={toWatchLater}
-						onChange={(e) => setToWatchLater(e.target.checked)}
+						type="text"
+						placeholder="Rechercher un film..."
+						value={search}
+						onChange={(e) => setSearch(e.target.value)}
 					/>
-					À voir plus tard
-				</label>
-				{editId ? (
-					<button type="button" onClick={handleUpdate}>
-						Modifier le film
-					</button>
-				) : (
-					<button type="button" onClick={handleAdd}>
-						Ajouter le film
-					</button>
-				)}
-				<div>
-					<p className="selection">Voici une sélection</p>
-					<p className="selection">
-						À vous maintenant de l’enrichir, de la personnaliser, de la modifier
-						ou de la supprimer… "
+				</div>
+				<div className="form">
+					<input
+						type="text"
+						placeholder="Titre"
+						value={title}
+						onChange={(e) => setTitle(e.target.value)}
+					/>
+					<input
+						type="number"
+						placeholder="Année"
+						value={year}
+						onChange={(e) => setYear(e.target.value)}
+					/>
+					<input
+						type="text"
+						placeholder="URL image"
+						value={image}
+						onChange={(e) => setImage(e.target.value)}
+					/>
+					<label>
+						<input
+							type="checkbox"
+							className="checkbox-custom"
+							checked={toWatchLater}
+							onChange={(e) => setToWatchLater(e.target.checked)}
+						/>
+						À voir plus tard
+					</label>
+					{editId ? (
+						<button type="button" onClick={handleUpdate}>
+							Modifier le film
+						</button>
+					) : (
+						<button type="button" onClick={handleAdd}>
+							Ajouter le film
+						</button>
+					)}
+					<div></div>
+					<p className="selection hide-on-mobile">
+						Voici une sélection, à vous maintenant de l’enrichir, de la
+						personnaliser, de la modifier ou de la supprimer… "
 					</p>
-					<p className="view">et surtout de la visionner !</p>
+					<p className="view hide-on-mobile">et surtout de la visionner !</p>
 				</div>
 			</div>
 			<div className="movies">
