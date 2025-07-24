@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "predev": "npm run postinstall",
-    "postinstall": "npm install --prefix client && npm install --prefix server",
-    "dev": "concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm run dev:client\" \"npm run dev:server\"",
+    "dev": "npm run setup && concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm run dev:client\" \"npm run dev:server\"",
+    "setup": "npm install --prefix client && npm install --prefix server",
     "dev:client": "npm run dev --prefix client -- --host",
     "dev:server": "npm run dev --prefix server"
   },
