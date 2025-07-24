@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run prepare && npm run start",
-    "prepare": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "node setup.js && npm run start",
     "start": "concurrently -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "npm run dev --prefix client -- --host",
     "dev:server": "npm run dev --prefix server"
